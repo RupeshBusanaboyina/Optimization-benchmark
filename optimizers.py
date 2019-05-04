@@ -9,6 +9,8 @@ class StupidGradientDescent:
 
 		self.state = np.array([x0 , y0])
 		self.alpha = alpha
-		self 
+		self.fgrad = fgrad
+
+ 
 
 
