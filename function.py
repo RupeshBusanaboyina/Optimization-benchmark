@@ -15,6 +15,6 @@ import numpy as np
 
 		def grad(self , x, y):
 
-			return np.array([-2,*(self.a-x),0
+			return np.array([-2,*(self.a-x),0.]) + 2.*self.b*(y-x**2.)*np.array([-2.*x, 1.])
 
 
