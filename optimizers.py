@@ -11,6 +11,7 @@ class StupidGradientDescent:
 		self.alpha = alpha
 		self.fgrad = fgrad
 
- 
+	def step(self):
+		self.state -= self.alpha*self.fgrad(self.state[0], self.state[1]) 
 
 
