@@ -3,18 +3,18 @@
 
 import numpy as np
 
-	class Rosenbrock:
+class Rosenbrock:
 
-		def__init__(self , a=1., b-100.):
+		def __init__(self , a=1., b=100.):
 			self.a = a
 			self.b = b
 
 		def eval(self,x,y):
 
-			return (self.a-x)** + self.b*(y-x**2)**2
+			return (self.a-x)**2 + self.b*(y-x**2)**2
 
 		def grad(self , x, y):
 
-			return np.array([-2,*(self.a-x),0.]) + 2.*self.b*(y-x**2.)*np.array([-2.*x, 1.])
+			return np.array([-2.*(self.a-x), 0.]) + 2.*self.b*(y-x**2.)*np.array([-2.*x, 1.])
 
 
